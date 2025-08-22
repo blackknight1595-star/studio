@@ -35,7 +35,35 @@ export const liveScoreData: LiveScore = {
     '16.6: Siraj to Yadav, FOUR! Finds the gap through covers.',
     '16.5: Siraj to Yadav, no run.',
     '16.4: Siraj to Sharma, 1 run, single to deep square leg.',
-  ]
+  ],
+  scorecard: {
+    team1Batting: [
+      { name: 'Virat Kohli', status: 'c Sharma b Bumrah', runs: 51, balls: 42, fours: 4, sixes: 1, strikeRate: '121.43' },
+      { name: 'Faf du Plessis', status: 'lbw b Chawla', runs: 22, balls: 18, fours: 3, sixes: 0, strikeRate: '122.22' },
+      { name: 'Rajat Patidar', status: 'run out (SKY)', runs: 35, balls: 25, fours: 2, sixes: 2, strikeRate: '140.00' },
+      { name: 'Glenn Maxwell', status: 'not out', runs: 45, balls: 25, fours: 3, sixes: 3, strikeRate: '180.00' },
+      { name: 'Dinesh Karthik', status: 'not out', runs: 18, balls: 10, fours: 2, sixes: 1, strikeRate: '180.00' },
+    ],
+    team1Bowling: [
+        { name: 'Jasprit Bumrah', overs: 4, maidens: 0, runs: 28, wickets: 1, economy: '7.00' },
+        { name: 'Piyush Chawla', overs: 4, maidens: 0, runs: 35, wickets: 1, economy: '8.75' },
+        { name: 'Akash Madhwal', overs: 4, maidens: 0, runs: 40, wickets: 0, economy: '10.00' },
+        { name: 'Kumar Kartikeya', overs: 4, maidens: 0, runs: 38, wickets: 0, economy: '9.50' },
+        { name: 'Hardik Pandya', overs: 4, maidens: 0, runs: 41, wickets: 0, economy: '10.25' },
+    ],
+    team2Batting: [
+      { name: 'Rohit Sharma', status: 'batting', runs: 78, balls: 50, fours: 6, sixes: 4, strikeRate: '156.00' },
+      { name: 'Ishan Kishan', status: 'c Karthik b Siraj', runs: 15, balls: 12, fours: 2, sixes: 0, strikeRate: '125.00' },
+      { name: 'Suryakumar Yadav', status: 'batting', runs: 52, balls: 40, fours: 5, sixes: 2, strikeRate: '130.00' },
+    ],
+    team2Bowling: [
+      { name: 'Mohammed Siraj', overs: 4, maidens: 0, runs: 30, wickets: 1, economy: '7.50' },
+      { name: 'Harshal Patel', overs: 3.2, maidens: 0, runs: 40, wickets: 0, economy: '12.00' },
+      { name: 'Wanindu Hasaranga', overs: 4, maidens: 0, runs: 32, wickets: 0, economy: '8.00' },
+      { name: 'Shahbaz Ahmed', overs: 3, maidens: 0, runs: 25, wickets: 0, economy: '8.33' },
+      { name: 'Glenn Maxwell', overs: 3, maidens: 0, runs: 25, wickets: 0, economy: '8.33' },
+    ],
+  }
 };
 
 export const pointsTable: PointsTableEntry[] = [

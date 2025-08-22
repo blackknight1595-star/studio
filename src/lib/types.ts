@@ -33,6 +33,32 @@ export interface PlayerStat {
   stat: number;
 }
 
+export interface BatsmanScore {
+    name: string;
+    status: string;
+    runs: number;
+    balls: number;
+    fours: number;
+    sixes: number;
+    strikeRate: string;
+}
+
+export interface BowlerStat {
+    name: string;
+    overs: number;
+    maidens: number;
+    runs: number;
+    wickets: number;
+    economy: string;
+}
+
+export interface Scorecard {
+    team1Batting: BatsmanScore[];
+    team1Bowling: BowlerStat[];
+    team2Batting: BatsmanScore[];
+    team2Bowling: BowlerStat[];
+}
+
 export interface LiveScore {
   matchId: number;
   team1Score: string;
@@ -41,4 +67,5 @@ export interface LiveScore {
   team2Overs: string;
   commentary: string[];
   statusText: string;
+  scorecard: Scorecard;
 }
