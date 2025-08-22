@@ -42,11 +42,11 @@ export default function WinProbabilityChart() {
   }
 
   const id = "pie-interactive"
-  const [activeTeam, setActiveTeam] = React.useState(chartData[1].team)
+  const [activeTeam, setActiveTeam] = React.useState(chartData.sort((a,b) => b.probability - a.probability)[0].team)
 
   const activeIndex = React.useMemo(
     () => chartData.findIndex((item) => item.team === activeTeam),
-    [activeTeam]
+    [activeTeam, chartData]
   )
   const allTeams = chartData.map((item) => item.team)
 
