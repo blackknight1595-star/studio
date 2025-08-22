@@ -30,7 +30,7 @@ export const liveScoreData: LiveScore = {
   team2Overs: '17.2',
   statusText: 'Mumbai Indians need 28 runs in 16 balls.',
   commentary: [
-    { ball: '17.2', event: 'SIX', description: 'Patel to Sharma, SIX! Smashed over long-on! That\'s a huge hit, sails deep into the stands. The crowd is going wild!' },
+    { ball: '17.2', event: 'SIX', description: 'Bumrah to Iyer attacks the stumps and bowls it short in length, Iyer goes back in his crease and pushes it wide of cover for one. Scores level now and the crowd roars in anticipation for the glory shot.' },
     { ball: '17.1', event: '2', description: 'Patel to Sharma, 2 runs. A good length delivery outside off, Sharma cleverly clips it off his pads towards deep mid-wicket for a comfortable two.' },
     { ball: '16.6', event: 'FOUR', description: 'Siraj to Yadav, FOUR! Short and wide from Siraj, Yadav cuts it fiercely past point for a boundary. Much needed for Mumbai.' },
     { ball: '16.5', event: '•', description: 'Siraj to Yadav, no run. Yorker-length delivery on the off-stump, Yadav digs it out back to the bowler. Excellent bowling.' },
@@ -88,6 +88,37 @@ export const liveScoreData: LiveScore = {
       { name: 'Shahbaz Ahmed', overs: 3, maidens: 0, runs: 25, wickets: 0, economy: '8.33' },
       { name: 'Glenn Maxwell', overs: 3, maidens: 0, runs: 25, wickets: 0, economy: '8.33' },
     ],
+  },
+  scoreComparison: [
+    { over: 1, team1Runs: 8, team2Runs: 7 },
+    { over: 2, team1Runs: 15, team2Runs: 12 },
+    { over: 3, team1Runs: 25, team2Runs: 20 },
+    { over: 4, team1Runs: 33, team2Runs: 28 },
+    { over: 5, team1Runs: 45, team2Runs: 40 },
+    { over: 6, team1Runs: 55, team2Runs: 48 },
+    { over: 7, team1Runs: 63, team2Runs: 55 },
+    { over: 8, team1Runs: 72, team2Runs: 64 },
+    { over: 9, team1Runs: 81, team2Runs: 73 },
+    { over: 10, team1Runs: 90, team2Runs: 82 },
+    { over: 11, team1Runs: 102, team2Runs: 91 },
+    { over: 12, team1Runs: 111, team2Runs: 100 },
+    { over: 13, team1Runs: 120, team2Runs: 110 },
+    { over: 14, team1Runs: 132, team2Runs: 122 },
+    { over: 15, team1Runs: 145, team2Runs: 135 },
+    { over: 16, team1Runs: 158, team2Runs: 148 },
+    { over: 17, team1Runs: 170, team2Runs: 155 },
+    { over: 18, team1Runs: 182, team2Runs: 0 },
+    { over: 19, team1Runs: 182, team2Runs: 0 },
+    { over: 20, team1Runs: 182, team2Runs: 0 },
+  ],
+  winProbability: [
+      { team: 'RCB', probability: 45 },
+      { team: 'MI', probability: 55 }
+  ],
+  headToHead: {
+      totalMatches: 32,
+      team1Wins: 14,
+      team2Wins: 18
   }
 };
 

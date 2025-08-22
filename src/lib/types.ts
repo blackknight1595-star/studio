@@ -65,6 +65,24 @@ export interface CommentaryEvent {
   description: string;
 }
 
+export interface ScoreComparisonData {
+    over: number;
+    team1Runs: number;
+    team2Runs: number;
+}
+
+export interface WinProbabilityData {
+    team: string;
+    probability: number;
+}
+
+export interface HeadToHeadData {
+    totalMatches: number;
+    team1Wins: number;
+    team2Wins: number;
+}
+
+
 export interface LiveScore {
   matchId: number;
   team1Score: string;
@@ -74,4 +92,7 @@ export interface LiveScore {
   commentary: CommentaryEvent[];
   statusText: string;
   scorecard: Scorecard;
+  scoreComparison: ScoreComparisonData[];
+  winProbability: WinProbabilityData[];
+  headToHead: HeadToHeadData;
 }
