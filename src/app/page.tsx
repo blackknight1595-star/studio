@@ -11,7 +11,7 @@ export default function Home() {
             <CricketIcon className="w-16 h-16 text-primary" />
           </div>
           <CardTitle className="text-3xl font-bold font-headline">CricTracker Live</CardTitle>
-          <CardDescription>Enter your mobile to track the action</CardDescription>
+          <CardDescription>Enter your details to track the action</CardDescription>
         </CardHeader>
         <CardContent>
           <LoginForm />

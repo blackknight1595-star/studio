@@ -17,6 +17,9 @@ import {
 import { Input } from "@/components/ui/input";
 
 const FormSchema = z.object({
+  email: z.string().email({
+    message: "Please enter a valid email.",
+  }),
   mobile: z.string().regex(/^\d{10}$/, {
     message: "Mobile number must be 10 digits.",
   }),
@@ -27,6 +30,7 @@ export function LoginForm() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
+      email: "",
       mobile: "",
     },
   });
@@ -34,13 +38,26 @@ export function LoginForm() {
   function onSubmit(data: z.infer<typeof FormSchema>) {
     // In a real app, you'd handle OTP verification here.
     // For this demo, we'll just redirect to the dashboard.
-    console.log("Simulating login for:", data.mobile);
+    console.log("Simulating login for:", data.email, data.mobile);
     router.push("/dashboard");
   }
 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Email Address</FormLabel>
+              <FormControl>
+                <Input placeholder="name@example.com" {...field} type="email" />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
         <FormField
           control={form.control}
           name="mobile"
