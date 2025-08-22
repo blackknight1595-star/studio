@@ -59,13 +59,19 @@ export interface Scorecard {
     team2Bowling: BowlerStat[];
 }
 
+export interface CommentaryEvent {
+  ball: string;
+  event: string;
+  description: string;
+}
+
 export interface LiveScore {
   matchId: number;
   team1Score: string;
   team1Overs: string;
   team2Score: string;
   team2Overs: string;
-  commentary: string[];
+  commentary: CommentaryEvent[];
   statusText: string;
   scorecard: Scorecard;
 }
