@@ -30,12 +30,12 @@ export const liveScoreData: LiveScore = {
   team2Overs: '17.2',
   statusText: 'Mumbai Indians need 28 runs in 16 balls.',
   commentary: [
-    { ball: '17.2', event: 'SIX', description: 'Patel to Sharma, SIX! Smashed over long-on!' },
-    { ball: '17.1', event: '2', description: 'Patel to Sharma, 2 runs, clipped off the pads.' },
-    { ball: '16.6', event: 'FOUR', description: 'Siraj to Yadav, FOUR! Finds the gap through covers.' },
-    { ball: '16.5', event: '•', description: 'Siraj to Yadav, no run.' },
-    { ball: '16.4', event: '1', description: 'Siraj to Sharma, 1 run, single to deep square leg.' },
-    { ball: '16.3', event: 'W', description: 'Siraj to Green, OUT! Clean bowled! What a delivery!' },
+    { ball: '17.2', event: 'SIX', description: 'Patel to Sharma, SIX! Smashed over long-on! That\'s a huge hit, sails deep into the stands. The crowd is going wild!' },
+    { ball: '17.1', event: '2', description: 'Patel to Sharma, 2 runs. A good length delivery outside off, Sharma cleverly clips it off his pads towards deep mid-wicket for a comfortable two.' },
+    { ball: '16.6', event: 'FOUR', description: 'Siraj to Yadav, FOUR! Short and wide from Siraj, Yadav cuts it fiercely past point for a boundary. Much needed for Mumbai.' },
+    { ball: '16.5', event: '•', description: 'Siraj to Yadav, no run. Yorker-length delivery on the off-stump, Yadav digs it out back to the bowler. Excellent bowling.' },
+    { ball: '16.4', event: '1', description: 'Siraj to Sharma, 1 run. Full toss on the pads, Sharma flicks it to deep square leg for a single. He keeps the strike.' },
+    { ball: '16.3', event: 'W', description: 'Siraj to Green, OUT! Clean bowled! Siraj comes around the wicket and delivers a searing yorker that castles the stumps. What a delivery! Green is gone!' },
   ],
   scorecard: {
     team1Batting: [
